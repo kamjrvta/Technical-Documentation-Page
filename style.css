@@ -1,0 +1,166 @@
+body {
+  min-width: 290px;
+  color: black;
+  background-color: #7f5d33;
+  font-family: 'Century Gothic';
+  line-height: 1.5;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: black;
+}
+
+header {
+  color:  white;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+  font-size: 3em;
+  font-weight: bold;
+  background-color: black;
+  line-height: 1;
+}
+
+#main-doc header {
+  color:  #FFFFFF;
+  font-weight: 900;
+background-color: black;
+  text-align: left;
+  margin: 0px;
+  font-size: 4em;
+}
+
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #feffff;
+}
+
+#navbar li {
+  color: #c8ad7f;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  background-color: white;
+ 
+}
+
+
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+h1 {
+	color: #FFFFFF;
+	font-size: 2em;
+	margin-bottom: 0px;
+
+}
+
+section article {
+  color:  #FFFFFF;
+  margin: 15px;
+}
+
+section li {
+	margin:15px 0px 0px 20px;
+}
+
+.block-code {
+  display: block;
+  font-size: 1.2em;
+  width: 600px;
+  color: #000000;
+  text-align: left;
+  white-space: pre-line;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  background-color: #e6d6c2;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+section img {
+	height: auto;
+	display: block;
+	margin: 50px auto 50px auto;
+}
+
+a:link {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:visited {
+  color: #151516;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+@media only screen and (max-width: 815px) {
+  /* For mobile phones: */
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    background-color:   #FFFFFF;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 200px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
+}
